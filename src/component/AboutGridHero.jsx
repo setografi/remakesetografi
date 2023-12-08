@@ -12,7 +12,12 @@ export default function AboutGridHero() {
   return (
     <div className="w-[28.75rem] md:w-[48rem] block mx-auto my-12">
       <div className="grid grid-cols-3 grid-rows-3 gap-4">
-        <div className=" rounded-xl overflow-hidden">
+        <div
+          data-aos="fade-right"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-sine"
+          className=" rounded-xl overflow-hidden col-span-3 md:col-span-1"
+        >
           <img
             className="object-cover duration-300 hover:scale-125"
             src={projectone}
@@ -20,12 +25,22 @@ export default function AboutGridHero() {
           />
         </div>
 
-        <div className="bg-Emerald rounded-xl">
+        <div
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+          className="bg-Emerald rounded-xl col-span-3 md:col-span-1"
+        >
           <MusicPlayer />
         </div>
 
-        <div className="bg-SkyBlue text-CatalinaBlue row-span-2 rounded-xl overflow-hidden relative">
-          <div className="flex flex-col items-center mt-20">
+        <div
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+          className="bg-SkyBlue text-CatalinaBlue row-span-2 rounded-xl overflow-hidden relative col-span-3 md:col-span-1"
+        >
+          <div className="  flex flex-col items-center my-20">
             <div className="w-20 animate-bounce">
               <img src={nextproject} alt="comming soon..." />
             </div>
@@ -42,7 +57,12 @@ export default function AboutGridHero() {
           </div>
         </div>
 
-        <div className="col-start-3 row-start-3 rounded-xl overflow-hidden">
+        <div
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+          className="md:col-start-3 md:row-start-3 rounded-xl overflow-hidden col-span-3 md:col-span-1"
+        >
           <img
             className="object-cover duration-300 hover:scale-125"
             src={projectthree}
@@ -50,7 +70,12 @@ export default function AboutGridHero() {
           />
         </div>
 
-        <div className="bg-Mauve text-RichBlack col-span-2 row-span-2 col-start-1 row-start-2 rounded-xl overflow-hidden">
+        <div
+          data-aos="fade-right"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-sine"
+          className="col-span-3 md:col-span-2 bg-gradient-to-bl from-Mauve to-Viol text-RichBlack md:row-span-2 col-start-1 row-start-2 rounded-xl overflow-hidden"
+        >
           <img
             className="object-cover duration-300 hover:scale-125"
             src=""
@@ -58,7 +83,12 @@ export default function AboutGridHero() {
           />
         </div>
 
-        <div className=" row-start-4 rounded-xl overflow-hidden">
+        <div
+          data-aos="fade-right"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-sine"
+          className="md:row-start-4 rounded-xl overflow-hidden col-span-3 md:col-span-1"
+        >
           <img
             className="object-cover duration-300 hover:scale-125"
             src={projecttwo}
@@ -66,7 +96,12 @@ export default function AboutGridHero() {
           />
         </div>
 
-        <div className="bg-PastelPink text-RichBlack col-span-2 row-start-4 rounded-xl">
+        <div
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+          className="bg-PastelPink text-RichBlack md:col-span-2 md:row-start-4 rounded-xl col-span-3"
+        >
           <div className="max-w-lg p-4">
             <div className="flex justify-start">
               <img
@@ -74,7 +109,7 @@ export default function AboutGridHero() {
                 src={profilephoto}
                 alt=""
               />
-              <div className="font-bold">
+              <div className="font-bold mb-6">
                 Setografi<span className="font-normal ml-2">. 5m ago</span>
                 <p className="font-normal mt-2">
                   I have some skills in graphic design and frontend developer.

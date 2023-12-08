@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import Marquee from "react-fast-marquee";
 
 const Slider = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
   const cards = [
     {
       img: "./src/assets/skill/adobephotoshop-color.svg",
@@ -75,60 +75,19 @@ const Slider = () => {
     },
   ];
 
-  const showCard = (index) => {
-    setCurrentIndex(index);
-  };
-
-  const showNextCard = () => {
-    if (currentIndex < cards.length - 1) {
-      setCurrentIndex(currentIndex + 1);
-    } else {
-      setCurrentIndex(0);
-    }
-  };
-
-  const showPrevCard = () => {
-    if (currentIndex > 0) {
-      setCurrentIndex(currentIndex - 1);
-    } else {
-      setCurrentIndex(cards.length - 1);
-    }
-  };
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      showNextCard();
-    }, 3000);
-
-    return () => clearInterval(interval);
-  }, [currentIndex]);
-
   return (
-    <div className="flex overflow-hidden w-360 p-2 ml-50 items-center mx-auto">
-      {cards.map((card, index) => (
-        <div
-          key={index}
-          className={`card ${
-            index === currentIndex
-              ? ""
-              : "transform transition-transform duration-500"
-          }`}
-          style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-        >
-          <img className="w-20 h-20" src={card.img} alt={card.alt} />
-          <p className="text-xs">{card.text}</p>
-        </div>
-      ))}
-
-      <div className="duration-300 hover:scale-125">
-        <button className="sbutton" onClick={showPrevCard}>
-          <i className="ri-arrow-left-s-line"></i>
-        </button>
-        <button className="sbutton" onClick={showNextCard}>
-          <i className="ri-arrow-right-s-line"></i>
-        </button>
-      </div>
-      {/* Additional elements for feeds-info-counts */}
+    <div className="flex overflow-hidden w-360 pl-[3.25rem]">
+      <Marquee speed={60} pauseOnHover>
+        {cards.map((card, index) => (
+          <div
+            key={index}
+            className="flex justify-center items-center flex-col gap-5 px-3"
+          >
+            <img className="w-20 h-20" src={card.img} alt={card.alt} />
+            <p className="text-xs">{card.text}</p>
+          </div>
+        ))}
+      </Marquee>
     </div>
   );
 };

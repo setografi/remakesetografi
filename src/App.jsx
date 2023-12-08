@@ -1,14 +1,20 @@
-import { useState } from "react";
+import { useEffect } from "react";
 import "remixicon/fonts/remixicon.css";
 import "./App.css";
 import profilephoto from "./assets/profile2.jpg";
 import AboutGridHero from "./component/AboutGridHero";
 import ButtonProfile from "./component/ButtonProfile";
-import AboutMe from "./component/AboutMe";
+import AboutMeData from "./component/AboutMeData";
+
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 function App() {
-  const [count, setCount] = useState(0);
-
+  useEffect(() => {
+    Aos.init({
+      once: true,
+    });
+  }, []);
   return (
     <>
       <div className="w-[28.75rem] block mx-auto mt-24 mb-12">
@@ -83,7 +89,7 @@ function App() {
 
       <AboutGridHero />
 
-      <AboutMe />
+      <AboutMeData />
 
       <footer className="w-[28.75rem] md:w-[48rem] mx-auto my-12">
         <div className="flex justify-between items-center">

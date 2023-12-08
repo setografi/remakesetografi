@@ -28,29 +28,26 @@ export default function MusicPlayer() {
         />
       </div>
 
-      <div className="flex gap-2 items-center text-Beige h-1/2 w-full p-4">
+      <div className="flex gap-2 items-center text-PaleGreen h-1/2 w-full p-4">
         <div className="leading-6 mx-auto">
-          <h2 className="font-bold">
+          <h2 className="font-bold text-Beige">
             <a>Write This Down</a>
           </h2>
           <h3 className="font-normal">
             <span>
-              <a className="hover:underline hover:text-Alabaster">
+              <a className="hover:underline hover:text-Beige">
                 Pop Smoke & Friend's
                 <br />
               </a>
             </span>
             &ndash;
             <span>
-              <a className="hover:underline hover:text-Alabaster">
-                {" "}
-                Thug Theory
-              </a>
+              <a className="hover:underline hover:text-Beige"> Thug Theory</a>
             </span>
           </h3>
         </div>
-        <div className="text-center text-Beige px-3">
-          <a className="hover:text-Alabaster text-xl" onClick={handlePlayPause}>
+        <div className="text-center text-Emerald px-3 py-2 bg-Beige rounded-full">
+          <a className="hover:text-PaleGreen text-xl" onClick={handlePlayPause}>
             <div className="duration-300 hover:scale-125">
               {isPlaying ? (
                 <i className="ri-pause-fill"></i>

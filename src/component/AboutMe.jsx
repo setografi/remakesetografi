@@ -1,8 +1,6 @@
 import React, { useState } from "react";
-import profilephoto from "../assets/profile2.jpg";
-import Instagramphoto from "../assets/about/instagram-color.svg";
 
-const AboutMe = () => {
+const AboutMe = ({ title, subtitle, content, image, sociallink }) => {
   const [isLiked, setIsLiked] = useState(false);
 
   const handleLike = () => {
@@ -10,16 +8,14 @@ const AboutMe = () => {
   };
 
   return (
-    <div className="w-[28.75rem] md:w-[48rem] block mx-auto my-12">
+    <div className="w-[28.75rem] md:w-[48rem] block mx-auto mb-4">
       <div className="max-w-lg p-4 bg-Alabaster text-DarkBlueGrey rounded-xl">
         <div className="flex justify-start">
-          <img className="w-9 h-9 mr-4" src={Instagramphoto} alt="" />
+          <img className="w-9 h-9 mr-4" src={image} alt="" />
           <div className="font-bold">
-            Instagram<span className="font-normal ml-2">. 1m ago</span>
-            <p className="font-normal mt-2">
-              My other skills? you can visit my Instagram. You can see Instagram
-              Typography content and some of my Photography Collections.
-            </p>
+            {title}
+            <span className="font-normal ml-2">{subtitle}</span>
+            <p className="font-normal mt-2">{content}</p>
           </div>
         </div>
 
@@ -35,7 +31,11 @@ const AboutMe = () => {
                 <i className="ri-heart-3-line ri-1x"></i>
               )}
             </button>
-            <a className="text-xl hover:text-Flame" href="" target="_blank">
+            <a
+              className="text-xl hover:text-Flame"
+              href={sociallink}
+              target="_blank"
+            >
               <i className="ri-share-forward-line ri-1x"></i>
             </a>
           </div>
