@@ -117,9 +117,7 @@ export default function AboutGridHero() {
               </div>
             </div>
 
-            <div>
-              <Slider />
-            </div>
+            <div>{/* <Slider /> */}</div>
           </div>
         </div>
       </div>
