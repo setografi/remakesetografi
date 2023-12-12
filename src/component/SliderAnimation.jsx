@@ -84,7 +84,9 @@ const Slider = () => {
             className="flex justify-center items-center flex-col gap-5 px-3"
           >
             <img className="w-20 h-20" src={card.img} alt={card.alt} />
-            <p className="text-xs">{card.text}</p>
+            <p className="text-xs text-RichBlack font-ibmplexmono font-semibold">
+              {card.text}
+            </p>
           </div>
         ))}
       </Marquee>

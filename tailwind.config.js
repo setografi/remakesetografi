@@ -24,6 +24,11 @@ export default {
       animation: {
         "spin-slow": "spin 3s linear infinite",
       },
+      fontFamily: {
+        lexend: ["Lexend Deca", "sans-serif"],
+        noto: ["Noto Serif", "serif"],
+        ibmplexmono: ["IBM Plex Mono", "monospace"],
+      },
     },
   },
   plugins: [],

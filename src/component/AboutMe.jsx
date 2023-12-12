@@ -9,7 +9,7 @@ const AboutMe = ({ title, subtitle, content, image, sociallink }) => {
 
   return (
     <div className="w-[28.75rem] md:w-[48rem] block mx-auto mb-4">
-      <div className="max-w-lg p-4 bg-Alabaster text-DarkBlueGrey rounded-xl">
+      <div className="max-w-lg p-4 text-DarkBlueGrey border-b-2 border-DarkBlueGrey">
         <div className="flex justify-start">
           <img className="w-9 h-9 mr-4" src={image} alt="" />
           <div className="font-bold">

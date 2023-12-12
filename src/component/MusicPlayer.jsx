@@ -30,7 +30,7 @@ export default function MusicPlayer() {
 
       <div className="flex gap-2 items-center text-PaleGreen h-1/2 w-full p-4">
         <div className="leading-6 mx-auto">
-          <h2 className="font-bold text-Beige">
+          <h2 className="font-semibold text-Beige">
             <a>Write This Down</a>
           </h2>
           <h3 className="font-normal">

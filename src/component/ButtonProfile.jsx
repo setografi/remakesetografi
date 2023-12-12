@@ -15,7 +15,7 @@ export default function ButtonProfile() {
   };
 
   return (
-    <div className="flex text-center gap-6">
+    <div className="flex text-center gap-6 p-1">
       <a
         className={`w-full rounded-xl p-3 font-medium text-sm cursor-pointer duration-300 hover:bg-Flame hover:text-PastelPink ${
           buttonState.follow ? "bg-Flame" : "bg-PastelPink text-Flame"
@@ -33,7 +33,7 @@ export default function ButtonProfile() {
         {buttonState.contact ? "Email Copied!" : "Contact Me"}
       </a>
       <a className="w-24 p-3 text-sm cursor-pointer">
-        <div className="text-PastelPink duration-300 hover:rotate-180 hover:scale-125">
+        <div className="text-PastelPink duration-700 hover:rotate-180 hover:scale-125">
           <i className="ri-settings-3-line ri-xl"></i>
         </div>
       </a>
