@@ -1,5 +1,4 @@
 import React from "react";
-import Marquee from "react-fast-marquee";
 
 const Slider = () => {
   const cards = [
@@ -76,20 +75,18 @@ const Slider = () => {
   ];
 
   return (
-    <div className="flex overflow-hidden w-360 pl-[3.25rem]">
-      <Marquee speed={60} pauseOnHover>
-        {cards.map((card, index) => (
-          <div
-            key={index}
-            className="flex justify-center items-center flex-col gap-5 px-3"
-          >
-            <img className="w-20 h-20" src={card.img} alt={card.alt} />
-            <p className="text-xs text-RichBlack font-ibmplexmono font-semibold">
-              {card.text}
-            </p>
-          </div>
-        ))}
-      </Marquee>
+    <div className="flex overflow-x-scroll w-360 pl-[3.25rem]">
+      {cards.map((card, index) => (
+        <div
+          key={index}
+          className="flex justify-center items-center flex-col gap-5 px-3"
+        >
+          <img src={card.img} alt={card.alt} />
+          <p className="text-xs text-RichBlack font-ibmplexmono font-semibold">
+            {card.text}
+          </p>
+        </div>
+      ))}
     </div>
   );
 };

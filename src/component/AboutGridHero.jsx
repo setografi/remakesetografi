@@ -113,11 +113,11 @@ export default function AboutGridHero() {
                 </p>
               </div>
             </div>
+            <div>
+              <Slider />
+            </div>
           </div>
         </div>
-      </div>
-      <div className="py-10">
-        <Slider />
       </div>
     </div>
   );
