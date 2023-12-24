@@ -8,19 +8,19 @@ const AboutMe = ({ title, subtitle, content, image, sociallink }) => {
   };
 
   return (
-    <div className="w-[28.75rem] md:w-[48rem] block mx-auto mb-4">
-      <div className="max-w-lg p-4 text-DarkBlueGrey border-b-2 border-DarkBlueGrey">
-        <div className="flex justify-start">
-          <img className="w-9 h-9 mr-4" src={image} alt="" />
-          <div className="font-bold">
-            {title}
-            <span className="font-normal ml-2">{subtitle}</span>
-            <p className="font-normal mt-2">{content}</p>
+    <section className="bg-Alabaster">
+      <div className="w-[28.75rem] md:w-[48rem] py-10 mx-auto">
+        <div className="max-w-lg p-4 text-DarkBlueGrey border-b-2 border-DarkBlueGrey">
+          <div className="flex justify-start">
+            <img className="w-9 h-9 mr-4" src={image} alt="" />
+            <div className="font-bold">
+              {title}
+              <span className="font-normal ml-2">{subtitle}</span>
+              <p className="font-normal mt-2">{content}</p>
+            </div>
           </div>
-        </div>
 
-        <div className="ml-12 mt-2">
-          <div>
+          <div className="ml-12 mt-2">
             <button
               className="text-xl mr-4 hover:text-Flame"
               onClick={handleLike}
@@ -41,7 +41,7 @@ const AboutMe = ({ title, subtitle, content, image, sociallink }) => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -46,8 +46,8 @@ export default function MusicPlayer() {
             </span>
           </h3>
         </div>
-        <div className="text-center text-Emerald px-3 py-2 bg-Beige rounded-full">
-          <a className="hover:text-PaleGreen text-xl" onClick={handlePlayPause}>
+        <div className="text-center text-Emerald px-3 py-2 bg-Beige rounded-full hover:bg-PaleGreen">
+          <a className="text-xl" onClick={handlePlayPause}>
             <div className="duration-300 hover:scale-125">
               {isPlaying ? (
                 <i className="ri-pause-fill"></i>

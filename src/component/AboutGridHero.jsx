@@ -7,6 +7,7 @@ import nextproject from "../assets/setan-gurih.png";
 import nextloader from "../assets/setting.svg";
 import Slider from "./SliderAnimation";
 import MusicPlayer from "./MusicPlayer";
+import ProjectEvent from "./ProjectEvent";
 
 export default function AboutGridHero() {
   return (
@@ -45,11 +46,11 @@ export default function AboutGridHero() {
               <img src={nextproject} alt="comming soon..." />
             </div>
 
-            <h2 className="p-4 text-xl font-semibold text-center">
-              This page isn't ready yet
+            <h2 className="font-ibmplexmono p-4 text-xl font-semibold text-center">
+              THIS PAGE ISN'T READY YET
             </h2>
             <a className="bg-ClassicRose text-DarkBlueGrey rounded-xl py-3 px-5 font-medium text-sm cursor-pointer duration-300 hover:bg-PastelPink hover:text-RichBlack">
-              Okay
+              OKAY
             </a>
           </div>
           <div className="rounded-full bg-gradient-to-tr from-Flame to-Mauve animate-spin-slow aspect-square w-[18rem] overflow-hidden absolute top-[14rem] left-[18rem] md:top-[21rem] md:left-[3rem]">
@@ -76,11 +77,7 @@ export default function AboutGridHero() {
           data-aos-duration="1000"
           className="col-span-3 md:col-span-2 bg-gradient-to-bl from-Mauve to-Viol text-RichBlack md:row-span-2 col-start-1 row-start-2 rounded-xl overflow-hidden"
         >
-          <img
-            className="object-cover duration-700 hover:scale-125"
-            src=""
-            alt="comming soon..."
-          />
+          <ProjectEvent />
         </div>
 
         <div
@@ -117,9 +114,9 @@ export default function AboutGridHero() {
               </div>
             </div>
 
-            {/* <div>
+            <div>
               <Slider />
-            </div> */}
+            </div>
           </div>
         </div>
       </div>
