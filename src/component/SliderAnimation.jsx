@@ -1,74 +1,88 @@
 import React from "react";
+import Image1 from "../assets/skill/adobephotoshop-color.svg";
+import Image2 from "../assets/skill/adobeillustrator-color.svg";
+import Image3 from "../assets/skill/coreldraw-color.svg";
+import Image4 from "../assets/skill/canva-color.svg";
+import Image5 from "../assets/skill/figma-color.svg";
+import Image6 from "../assets/skill/blender-color.svg";
+import Image7 from "../assets/skill/html5-color.svg";
+import Image8 from "../assets/skill/css3-color.svg";
+import Image9 from "../assets/skill/javascript-color.svg";
+import Image10 from "../assets/skill/bootstrap-color.svg";
+import Image11 from "../assets/skill/react-color.svg";
+import Image12 from "../assets/skill/tailwindcss-color.svg";
+import Image13 from "../assets/skill/elixir-color.svg";
+import Image14 from "../assets/skill/phoenixframework-color.svg";
 
 const Slider = () => {
   const cards = [
     {
-      img: "../assets/skill/adobephotoshop-color.svg",
+      img: Image1,
       alt: "Image 1",
       text: "Adobe Photoshop",
     },
     {
-      img: "../assets/skill/adobeillustrator-color.svg",
+      img: Image2,
       alt: "Image 2",
       text: "Adobe Illustrator",
     },
     {
-      img: "../assets/skill/coreldraw-color.svg",
+      img: Image3,
       alt: "Image 3",
       text: "CorelDraw",
     },
     {
-      img: "../assets/skill/canva-color.svg",
+      img: Image4,
       alt: "Image 4",
       text: "Canva",
     },
     {
-      img: "../assets/skill/figma-color.svg",
+      img: Image5,
       alt: "Image 5",
       text: "Figma",
     },
     {
-      img: "../assets/skill/blender-color.svg",
+      img: Image6,
       alt: "Image 6",
       text: "Blender",
     },
     {
-      img: "../assets/skill/html5-color.svg",
+      img: Image7,
       alt: "Image 7",
       text: "HTML",
     },
     {
-      img: "../assets/skill/css3-color.svg",
+      img: Image8,
       alt: "Image 8",
       text: "CSS",
     },
     {
-      img: "../assets/skill/javascript-color.svg",
+      img: Image9,
       alt: "Image 9",
       text: "JavaScript",
     },
     {
-      img: "../assets/skill/bootstrap-color.svg",
+      img: Image10,
       alt: "Image 10",
       text: "Bootstrap",
     },
     {
-      img: "../assets/skill/react-color.svg",
+      img: Image11,
       alt: "Image 11",
       text: "ReactJS",
     },
     {
-      img: "../assets/skill/tailwindcss-color.svg",
+      img: Image12,
       alt: "Image 12",
       text: "Tailwind CSS",
     },
     {
-      img: "../assets/skill/elixir-color.svg",
+      img: Image13,
       alt: "Image 13",
       text: "Elixir",
     },
     {
-      img: "../assets/skill/phoenixframework-color.svg",
+      img: Image14,
       alt: "Image 14",
       text: "Phoenix Framework",
     },
