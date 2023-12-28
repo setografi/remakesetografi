@@ -4,11 +4,12 @@ import ProjectImageEvent from "./ProjectImageEvent";
 export default function ProjectEvent() {
   return (
     <section className="flex flex-col items-center justify-center my-8 gap-6">
-      <div className=" overflow-hidden font-ibmplexmono w-96 h-72 bg-PastelPink border-4 border-RichBlack rounded-xl">
+      <ProjectImageEvent />
+      {/* <div className=" overflow-hidden font-ibmplexmono w-96 h-72 bg-PastelPink border-4 border-RichBlack rounded-xl">
         <ProjectImageEvent />
-      </div>
+      </div> */}
 
-      <div className="flex w-full justify-between">
+      {/* <div className="flex w-full justify-between">
         <div className="grid grid-flow-row grid-cols-3 grid-rows-2 py-4 px-16 gap-2">
           <button className="col-span-3 col-start-2 relative w-10 h-10 flex justify-center items-center duration-300 hover:scale-90 bg-DarkBlueGrey border-4 border-RichBlack rounded-lg">
             <span className="font-bold text-xl text-Alabaster">
@@ -41,7 +42,7 @@ export default function ProjectEvent() {
             A
           </button>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }

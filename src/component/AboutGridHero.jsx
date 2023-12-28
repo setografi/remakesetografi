@@ -11,7 +11,7 @@ import ProjectEvent from "./ProjectEvent";
 
 export default function AboutGridHero() {
   return (
-    <div className="w-[28.75rem] md:w-[48rem] block mx-auto mb-12">
+    <div className="mb-12">
       <div className="grid grid-cols-3 grid-rows-3 gap-4">
         <div
           data-aos="fade-right"

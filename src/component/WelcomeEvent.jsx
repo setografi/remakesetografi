@@ -3,7 +3,7 @@ import ProfilePhoto from "../assets/transparant-profile.png";
 
 export default function WelcomeEvent() {
   return (
-    <section className="w-[28.75rem] md:w-[48rem] mx-auto">
+    <section>
       <div className="flex items-center justify-center mx-auto rounded-xl bg-LightBlue text-RichBlack h-60 mt-6 mb-4">
         <div className="flex flex-col space-y-5 px-10 items-start justify-start cursor-default">
           <h1 className="font-noto text-4xl font-bold tracking-wide">
