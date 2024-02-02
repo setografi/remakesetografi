@@ -8,7 +8,7 @@ import Readcvphoto from "../assets/about/readdotcv-color.svg";
 export default function AboutMeData() {
   return (
     <>
-      <div className="bg-Alabaster">
+      <div>
         <AboutMe
           title={"Instagram"}
           subtitle={". Just now"}

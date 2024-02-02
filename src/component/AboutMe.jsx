@@ -9,8 +9,8 @@ const AboutMe = ({ title, subtitle, content, image, sociallink }) => {
 
   return (
     <section>
-      <div className=" py-10 mx-auto bg-Alabaster">
-        <div className="max-w-lg p-4 text-DarkBlueGrey border-b-2 border-DarkBlueGrey">
+      <div className="mx-auto">
+        <div className="max-w-lg p-4 text-DarkBlueGrey">
           <div className="flex justify-start">
             <img className="w-9 h-9 mr-4" src={image} alt="" />
             <div className="font-bold">

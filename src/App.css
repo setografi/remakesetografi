@@ -9,8 +9,8 @@
 body {
   font-family: "Lexend Deca", sans-serif;
   font-size: 0.938rem;
-  background-color: #1a2740;
-  color: #f2ede9;
+  background-color: #f2ede9;
+  color: #010d00;
   line-height: 1.5;
 }
 
@@ -24,7 +24,7 @@ body {
 
 ::-webkit-scrollbar-thumb {
   border-radius: 0.5rem;
-  background-color: #1a2740;
+  background-color: #010d00;
 }
 
 ::-webkit-scrollbar-thumb:hover {

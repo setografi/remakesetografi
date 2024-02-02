@@ -28,7 +28,7 @@ export default function MusicPlayer() {
         />
       </div>
 
-      <div className="flex gap-2 items-center text-PaleGreen h-1/2 w-full p-4">
+      <div className="flex gap-2 items-center text-PastelPink h-1/2 w-full p-4">
         <div className="leading-6 mx-auto">
           <h2 className="font-semibold text-Beige">
             <a>Write This Down</a>
@@ -46,7 +46,7 @@ export default function MusicPlayer() {
             </span>
           </h3>
         </div>
-        <div className="text-center text-Emerald px-3 py-2 bg-Beige rounded-full hover:bg-PaleGreen">
+        <div className="text-center text-Flame px-3 py-2 bg-PastelPink rounded-full hover:bg-Beige">
           <a className="text-xl" onClick={handlePlayPause}>
             <div className="duration-300 hover:scale-125">
               {isPlaying ? (
