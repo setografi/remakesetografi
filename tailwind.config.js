@@ -9,15 +9,16 @@ export default {
         DarkBlueGrey: "#1A2740",
         CatalinaBlue: "#122A73",
         Flame: "#F25E3D",
-
         RichBlack: "#010D00",
         Beige: "#F5EEE6",
-
-        PastelPink: "#FDE5E1",
-        Mauve: "#CCA7CF",
         LightBlue: "#CACEE9",
         SkyBlue: "#9EC9FE",
-        Viol: "#E6C9DB",
+        PastelPink: "#FDE5E1",
+
+        BlackText: "#262626",
+        WhiteBack: "#F2F2F2",
+        Cream: "#F2D8A7",
+        Bronze: "#F28F6B",
       },
       animation: {
         "spin-slow": "spin 3s linear infinite",
