@@ -19,7 +19,7 @@ export default function WelcomeEvent() {
               "Hello! Welcome, you are viewing my portfolio website. Are you
               ready to Explore about me? Let's Go!"
               <p className="text-xs text-grey-darkest text-right mt-1">
-                12:45 pm
+                06:45 pm
               </p>
             </h3>
           </div>
@@ -27,7 +27,7 @@ export default function WelcomeEvent() {
           <div className="bg-WhiteBack text-sm text-BlackText rounded-xl font-ibmplexmono mt-6 ml-auto">
             <h3 className="p-3 w-[14.8rem] text-right">
               By the way, who are you?{" "}
-              <p className="text-xs text-grey-darkest  mt-1">12:45 pm</p>
+              <p className="text-xs text-grey-darkest  mt-1">06:45 pm</p>
             </h3>
           </div>
 
@@ -36,7 +36,7 @@ export default function WelcomeEvent() {
               I'm, <span className="font-semibold">Wahyu Seto Pranata</span>{" "}
               <br /> Designers and Developers
               <p className="text-xs text-grey-darkest text-right mt-1">
-                12:45 pm
+                06:45 pm
               </p>
             </h3>
           </div>
@@ -67,13 +67,13 @@ export default function WelcomeEvent() {
 
           <div className="pt-6">
             <div className="flex items-center px-6">
-              <h2 className="text-2xl md:text-4xl xl:text-5xl font-noto font-semibold border-2 border-BlackText rounded-full p-3">
+              <h2 className="text-lg sm:text-2xl md:text-4xl xl:text-5xl font-noto font-semibold border-2 border-BlackText rounded-full p-3">
                 Create.
               </h2>
-              <h2 className="text-2xl md:text-4xl xl:text-5xl font-noto font-semibold border-2 border-BlackText rounded-full p-3">
+              <h2 className="text-lg sm:text-2xl md:text-4xl xl:text-5xl font-noto font-semibold border-2 border-BlackText rounded-full p-3">
                 Design.
               </h2>
-              <div className="text-2xl md:text-4xl xl:text-5xl text-WhiteBack font-noto font-semibold bg-Bronze rounded-full p-3">
+              <div className="text-lg sm:text-2xl md:text-4xl xl:text-5xl text-WhiteBack font-noto font-semibold bg-Bronze rounded-full p-3">
                 <div className="animate-spin-slow aspect-square">
                   <i className="ri-arrow-right-line"></i>
                 </div>
@@ -81,10 +81,10 @@ export default function WelcomeEvent() {
             </div>
 
             <div className="flex items-center px-6">
-              <h2 className="text-2xl md:text-4xl xl:text-5xl font-noto font-semibold border-2 border-BlackText rounded-full p-3">
+              <h2 className="text-lg sm:text-2xl md:text-4xl xl:text-5xl font-noto font-semibold border-2 border-BlackText rounded-full p-3">
                 Develop.
               </h2>
-              <h2 className="text-2xl md:text-4xl xl:text-5xl font-noto font-semibold border-2 border-BlackText rounded-full p-3">
+              <h2 className="text-lg sm:text-2xl md:text-4xl xl:text-5xl font-noto font-semibold border-2 border-BlackText rounded-full p-3">
                 Experiment.
               </h2>
             </div>

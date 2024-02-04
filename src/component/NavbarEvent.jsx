@@ -15,19 +15,19 @@ export default function NavbarEvent() {
           <ul className="flex text-WhiteBack bg-Bronze p-1 rounded-full justify-between text-center gap-x-2">
             <Link
               to="/exploration"
-              className="w-full p-3 rounded-l-full bg-transparent text-sm font-medium duration-700 hover:bg-Cream hover:text-BlackText"
+              className="w-full p-3 rounded-full bg-transparent text-sm font-medium duration-700 hover:bg-Cream hover:text-BlackText"
             >
               Explorations
             </Link>
             <Link
               to="/aboutme"
-              className="w-full p-3 bg-transparent text-sm font-medium duration-700 hover:bg-Cream hover:text-BlackText"
+              className="w-full p-3 rounded-full bg-transparent text-sm font-medium duration-700 hover:bg-Cream hover:text-BlackText"
             >
               About
             </Link>
             <Link
               to="/blog"
-              className="w-full p-3 rounded-r-full bg-transparent text-sm font-medium duration-700 hover:bg-Cream hover:text-BlackText"
+              className="w-full p-3 rounded-full bg-transparent text-sm font-medium duration-700 hover:bg-Cream hover:text-BlackText"
             >
               Blog
             </Link>
