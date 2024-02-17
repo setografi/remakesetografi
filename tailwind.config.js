@@ -17,6 +17,7 @@ export default {
 
         BlackText: "#262626",
         WhiteBack: "#F2F2F2",
+        GrayBorder: "#8C7E79",
         Cream: "#F2D8A7",
         Bronze: "#F28F6B",
       },

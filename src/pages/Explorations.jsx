@@ -14,10 +14,16 @@ export default function Explorations() {
   }, []);
 
   return (
-    <section className="p-4">
-      <NavbarEvent />
+    <section className="p-4 bg-WhiteBack">
+      <div className="pb-4">
+        <NavbarEvent />
+      </div>
+
       <AboutGridHero />
-      <FooterEvent />
+
+      <div className="text-center">
+        <FooterEvent />
+      </div>
     </section>
   );
 }

@@ -1,48 +1,43 @@
 import React from "react";
 import LogoWeb from "../assets/logo.png";
-import Background from "../assets/background2.jpg";
 import ProfilePhoto from "../assets/profile2.jpg";
 import NavbarEvent from "./NavbarEvent";
 import FooterEvent from "./FooterEvent";
-import KofiLogo from "../assets/about/kofi-color.svg";
 
 export default function WelcomeEvent() {
   return (
-    <section
-      className="bg-cover bg-center w-full bg-gradient-to-br from-Bronze to-Cream"
-      // style={{ backgroundImage: `url(${Background})` }}
-    >
-      <div className="flex flex-col lg:flex-row h-full rounded-lg text-BlackText justify-between p-4">
+    <section className="bg-WhiteBack">
+      <div className="flex flex-col lg:flex-row h-full rounded-lg text-BlackText p-4">
         <div className="flex flex-col w-full items-start px-6">
-          <div className="bg-WhiteBack text-sm text-BlackText rounded-xl font-ibmplexmono">
+          <div className="bg-WhiteBack text-sm text-BlackText border-[1px] border-GrayBorder rounded-xl font-ibmplexmono">
             <h3 className="p-3 md:w-[26rem]">
-              "Hello! Welcome, you are viewing my portfolio website. Are you
-              ready to Explore about me? Let's Go!"
+              Hello! Welcome, you are viewing my portfolio website. Are you
+              ready to Explore about me? Let's Go!
               <p className="text-xs text-grey-darkest text-right mt-1">
                 06:45 pm
               </p>
             </h3>
           </div>
 
-          <div className="bg-WhiteBack text-sm text-BlackText rounded-xl font-ibmplexmono mt-6 ml-auto">
+          <div className="bg-WhiteBack text-sm text-BlackText border-[1px] border-GrayBorder rounded-xl font-ibmplexmono mt-6 ml-auto">
             <h3 className="p-3 w-[14.8rem] text-right">
               By the way, who are you?{" "}
               <p className="text-xs text-grey-darkest  mt-1">06:45 pm</p>
             </h3>
           </div>
 
-          <div className="bg-WhiteBack text-sm text-BlackText rounded-xl font-ibmplexmono mt-6">
+          <div className="bg-WhiteBack text-sm text-BlackText border-[1px] border-GrayBorder rounded-xl font-ibmplexmono mt-6">
             <h3 className="p-3 w-[15rem]">
               I'm, <span className="font-semibold">Wahyu Seto Pranata</span>{" "}
-              <br /> Designers and Developers
+              <br /> Designer and Developer
               <p className="text-xs text-grey-darkest text-right mt-1">
                 06:45 pm
               </p>
             </h3>
           </div>
 
-          <div className="bg-WhiteBack text-sm text-BlackText rounded-xl font-ibmplexmono mt-3">
-            <div className="p-2 w-[16rem]">
+          <div className="bg-WhiteBack text-sm text-BlackText border-[1px] border-GrayBorder rounded-xl font-ibmplexmono mt-3">
+            <div className="p-2 w-[15rem]">
               <img
                 className="rounded-lg object-cover transition duration-700 grayscale hover:grayscale-0"
                 src={ProfilePhoto}
@@ -52,8 +47,8 @@ export default function WelcomeEvent() {
           </div>
         </div>
 
-        <div className="w-full bg-WhiteBack rounded-xl mt-6 lg:mt-0">
-          <div className="flex justify-between items-center p-6">
+        <div className="w-full bg-WhiteBack border-[1px] border-GrayBorder rounded-xl mt-6 lg:mt-0">
+          <div className="flex justify-between items-center px-6 py-4">
             <div className="flex justify-start items-center gap-4">
               <img className="object-cover h-9" src={LogoWeb} alt="Logo Web" />
 
@@ -65,16 +60,23 @@ export default function WelcomeEvent() {
             </div>
           </div>
 
-          <div className="pt-6">
+          <div>
+            <div className="text-base text-BlackText flex items-center mx-6 py-4">
+              <p>
+                Yo, I'm Seto, a unique creative designer and developer. I mainly
+                focus on...
+              </p>
+            </div>
+
             <div className="flex items-center px-6">
               <h2 className="text-lg sm:text-2xl md:text-4xl xl:text-5xl font-noto font-semibold border-2 border-BlackText rounded-full p-3">
-                Create.
+                Idea.
               </h2>
               <h2 className="text-lg sm:text-2xl md:text-4xl xl:text-5xl font-noto font-semibold border-2 border-BlackText rounded-full p-3">
-                Design.
+                Research.
               </h2>
-              <div className="text-lg sm:text-2xl md:text-4xl xl:text-5xl text-WhiteBack font-noto font-semibold bg-Bronze rounded-full p-3">
-                <div className="animate-spin-slow aspect-square">
+              <div className="text-lg sm:text-2xl md:text-4xl xl:text-5xl text-WhiteBack font-noto font-semibold bg-GrayBorder rounded-full py-3 px-[1.1rem] md:p-3">
+                <div>
                   <i className="ri-arrow-right-line"></i>
                 </div>
               </div>
@@ -82,7 +84,7 @@ export default function WelcomeEvent() {
 
             <div className="flex items-center px-6">
               <h2 className="text-lg sm:text-2xl md:text-4xl xl:text-5xl font-noto font-semibold border-2 border-BlackText rounded-full p-3">
-                Develop.
+                Create.
               </h2>
               <h2 className="text-lg sm:text-2xl md:text-4xl xl:text-5xl font-noto font-semibold border-2 border-BlackText rounded-full p-3">
                 Experiment.
@@ -96,7 +98,7 @@ export default function WelcomeEvent() {
                   Find me and take me! Check my Resume
                 </span>
                 <a
-                  className="font-medium transition duration-700 hover:text-Bronze hover:scale-110"
+                  className="font-medium transition-colors duration-700 hover:text-Bronze hover:scale-110"
                   href="https://read.cv/setografi"
                   target="_blank"
                 >
@@ -109,29 +111,15 @@ export default function WelcomeEvent() {
                   <i className="ri-arrow-down-line"></i>{" "}
                 </div>
                 <span className="text-base px-2">
-                  Support / Funding initiatives
+                  Available for project based freelance
                 </span>
-              </div>
-
-              <div className="text-2xl text-BlackText flex items-center gap-2">
-                <div className="transition duration-700 hover:text-Bronze hover:scale-110 cursor-pointer">
-                  <i className="ri-github-line"></i>
-                </div>
-
-                <img
-                  className="object-cover h-[18px] transition duration-700 hover:fill-Bronze hover:scale-110 cursor-pointer"
-                  src={KofiLogo}
-                  alt="ko-fi logo"
-                />
               </div>
             </div>
           </div>
 
-          <div className="flex justify-start px-6">
+          <div className="flex flex-col md:flex-row justify-start mx-4">
             <NavbarEvent />
-          </div>
 
-          <div className="px-4 lg:pt-6">
             <FooterEvent />
           </div>
         </div>

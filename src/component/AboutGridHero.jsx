@@ -11,7 +11,7 @@ import ProjectEvent from "./ProjectEvent";
 
 export default function AboutGridHero() {
   return (
-    <div className="mb-12">
+    <div className="mb-4">
       <div className="grid grid-cols-3 grid-rows-3 gap-4">
         <div
           data-aos="fade-right"
@@ -30,7 +30,7 @@ export default function AboutGridHero() {
           data-aos="fade-right"
           data-aos-offset="300"
           data-aos-easing="ease-in-sine"
-          className="bg-Flame rounded-xl col-span-3 md:col-span-1"
+          className="bg-Bronze rounded-xl col-span-3 md:col-span-1"
         >
           <MusicPlayer />
         </div>
@@ -39,7 +39,7 @@ export default function AboutGridHero() {
           data-aos="fade-down"
           data-aos-easing="linear"
           data-aos-duration="900"
-          className="bg-SkyBlue text-CatalinaBlue row-span-2 rounded-xl overflow-hidden relative col-span-3 md:col-span-1"
+          className="bg-Cream text-BlackText row-span-2 rounded-xl overflow-hidden relative col-span-3 md:col-span-1"
         >
           <div className="  flex flex-col items-center my-20">
             <div className="w-20 animate-bounce">
@@ -49,11 +49,11 @@ export default function AboutGridHero() {
             <h2 className="font-ibmplexmono p-4 text-xl font-semibold text-center">
               THIS PAGE ISN'T READY YET
             </h2>
-            <a className="bg-ClassicRose text-DarkBlueGrey rounded-xl py-3 px-5 font-medium text-sm cursor-pointer duration-300 hover:bg-PastelPink hover:text-RichBlack">
+            <a className="bg-Bronze text-WhiteBack rounded-xl py-3 px-5 font-medium text-sm cursor-pointer duration-700 hover:bg-PastelPink hover:text-RichBlack">
               OKAY
             </a>
           </div>
-          <div className="rounded-full bg-gradient-to-tr from-Flame to-Mauve animate-spin-slow aspect-square w-[18rem] overflow-hidden absolute top-[14rem] left-[16rem] md:w-[28rem] md:top-[41rem] md:left-[5rem]">
+          <div className="rounded-full bg-gradient-to-tr from-Flame to-PastelPink animate-spin-slow aspect-square w-[18rem] overflow-hidden absolute top-[14rem] left-[16rem] md:w-[28rem] md:top-[41rem] md:left-[5rem]">
             <img src={nextloader} alt="" />
           </div>
         </div>
@@ -75,7 +75,7 @@ export default function AboutGridHero() {
           data-aos="fade-down"
           data-aos-easing="linear"
           data-aos-duration="1000"
-          className="col-span-3 md:col-span-2 bg-gradient-to-bl from-Mauve to-Viol text-RichBlack md:row-span-2 col-start-1 row-start-2 rounded-xl overflow-hidden"
+          className="col-span-3 md:col-span-2 bg-Cream text-BlackText md:row-span-2 col-start-1 row-start-2 rounded-xl overflow-hidden"
         >
           <ProjectEvent />
         </div>
@@ -97,9 +97,9 @@ export default function AboutGridHero() {
           data-aos="fade-right"
           data-aos-offset="300"
           data-aos-easing="ease-in-sine"
-          className="bg-PastelPink text-RichBlack md:col-span-2 md:row-start-4 rounded-xl col-span-3"
+          className="bg-Bronze text-BlackText md:col-span-2 md:row-start-4 rounded-xl col-span-3"
         >
-          <div className="max-w-lg p-4">
+          {/* <div className="bg-WhiteBack p-4">
             <div className="flex justify-start">
               <img
                 className="w-9 h-9 mr-4 rounded-full"
@@ -116,7 +116,7 @@ export default function AboutGridHero() {
             <div>
               <Slider />
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
